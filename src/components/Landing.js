@@ -9,7 +9,7 @@ export default function Landing() {
 
             <div id="hero">
                 <img 
-                    src="../assets/img/gpc_logo_large@2x.png"
+                    src={require("../assets/img/gpc_logo_large@2x.png")}
                     alt="Rapptr Hero"
                 />
                 <h1>APP DESIGN & DEVELOPMENT AGENCY</h1>
