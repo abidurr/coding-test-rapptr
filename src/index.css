@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Avenir Next";
     src: url("assets/font/AvenirNext-Medium-06.ttf") format("truetype") url("assets/font/AvenirNext-Medium-06.woff") format("woff");
@@ -11,8 +17,7 @@
 
 .App {
     font-family: "Avenir Next", sans-serif;
-    color: aqua;
-    font-weight: 500;
+    color: white;
 }
 
 h1 {
