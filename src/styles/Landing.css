@@ -1,19 +1,26 @@
+:root {
+    --dark-background-color: #2F2E2E;
+    --button-blue-color: #2FCBFC;
+    --footer-gray-color: #E8E8E8;
+  }
+
 #splash {
+    margin: 0;
     background: url(../assets/img/gpc_hero_image@2x.png) no-repeat bottom center;
     background-size: cover;
-    min-width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 #splash #login {
+    position: relative;
     display: block;
     float: right;
     text-align: end;
     padding-top: 32px;
     padding-right: 80px;
-
+    margin: 0;
 }
 
 #hero {
@@ -24,4 +31,15 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+
+}
+
+#footer {
+    background-color: var(--footer-gray-color);
+    margin: 0;
+    bottom: 0;
+    color: black;
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 29px;
 }
