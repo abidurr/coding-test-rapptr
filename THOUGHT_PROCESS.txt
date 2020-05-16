@@ -1,2 +1,34 @@
 Hour 1
-First, I think of what technologies to use. It seems over the top to use React to build a simple landing page like this, in part because of SEO. But that is probably what you want me to use (instead of simple HTML, CSS, JS) so I will use React. I will probably need react router to have links, as well as axios for the get and post requests. So I installed those while when setting up npx create-react-app. I then get rid of the unnecessary boilerplate. I spend some time fixing up the font and h stylings. Using only truetype fonts is not good for cross-platform compatibility so I used an online converter to have woff files of the font as well.
+First, I think of what technologies to use. 
+It seems over the top to use React to build a simple landing page like this, in part because of SEO. 
+But that is probably what you want me to use (instead of simple HTML, CSS, JS) so I will use React. 
+I will probably need react router to have links, as well as axios for the get and post requests. 
+So I installed those while when setting up npx create-react-app. I then get rid of the unnecessary boilerplate. 
+I spend some time fixing up the font and h stylings. 
+Using only truetype fonts is not good for cross-platform compatibility so I used an online converter to have woff files of the font as well.
+When deploying make sure to use the original woff file for best results.
+
+Hour 2
+Set up Router, Switch in App.js.
+Make boilerplate files.
+Moved to Landing.js and started working there.
+Decided to not use styled-components and instead use basic CSS files and linking them to each relevant component.
+Set up the hero page.
+Made a not-so-fancy not found page too.
+
+Hour 3
+Had to figure out that src needs a require function.
+Had to figure out that I have to set the Hero test to absolute in order to completely get it to center.
+Made the other four parts as IDs.
+Realizing the pictures should be shrunken down a bit.
+
+Hour 4
+Working on the Apps and the links to it - decided to have the image link to the site only.
+Made the subscribe to newsletter things.
+Made the footer.
+Made the different paths.
+Made who we are using CSS grid.
+
+Hour 5
+Made the login and sign up pages and fixed up their styling.
+Spent most of the time trying to perfect things.

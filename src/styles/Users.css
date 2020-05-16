@@ -8,7 +8,7 @@
     margin: 0;
     background: url(../assets/img/gpc_loginBg@2x.png) no-repeat bottom center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -105,4 +105,9 @@
     height: 49px;
     min-width: 360px;
     cursor: pointer;
+}
+
+#success {
+    color: white;
+    margin-top: 15px;
 }

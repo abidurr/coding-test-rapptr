@@ -1,4 +1,5 @@
 import React from "react";
+import Axios from "axios"
 import "../styles/Users.css";
 
 export default function LogIn() {
@@ -20,19 +21,35 @@ export default function LogIn() {
                     </h3>
                 </div>
 
-                <input
-                    type="text"
-                    className="user-input"
-                    id="username"
-                    placeholder="Username"
-                />
+                <input type="text" id="username" placeholder="Username"/>
 
                 <input type="text" id="email" placeholder="Email" />
 
                 <input type="text" id="password" placeholder="Password" />
 
-                <button id="submit">SIGN UP</button>
+                <button id="submit" onClick={ () => handleSubmit() }>SIGN UP</button>
+                <div id="success"></div>
             </div>
         </div>
     );
+}
+
+function handleSubmit() {
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    Axios.post("http://dev.rapptrlabs.com/Tests/scripts/user-signup.php", {
+        "username": username,
+        "password": password,
+        "email": email
+    })
+        .then(function (response) {
+            document.getElementById("success").innerHTML = response;
+            console.log(response)
+        })
+        .catch(function (error) {
+            document.getElementById("success").innerHTML = error;
+            console.log(error)
+        });
 }
