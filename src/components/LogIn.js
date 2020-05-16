@@ -24,9 +24,9 @@ export default function LogIn() {
                         </a>
                     </h3>
                 </div>
-                <input type="text" id="email" placeholder="Email" />
+                <input type="email" id="email" placeholder="Email" />
 
-                <input type="text" id="password" placeholder="Password" />
+                <input type="password" id="password" placeholder="Password" />
 
                 <button id="submit" onClick={ () => handleSubmit() }>LOGIN</button>
                 <div id="success"></div>
@@ -36,19 +36,25 @@ export default function LogIn() {
 }
 
 function handleSubmit() {
+
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    const bodyFormData = new FormData();
+    bodyFormData.set("email", email);
+    bodyFormData.append("password", password);
 
-    Axios.post("http://dev.rapptrlabs.com/Tests/scripts/user-login.php", {
-        "password": password,
-        "email": email
+    Axios({
+        method: "POST",
+        url: "http://dev.rapptrlabs.com/Tests/scripts/user-login.php",
+        data: bodyFormData,
+        headers: { "Content-Type": "multipart/form-data" },
     })
         .then(function (response) {
-            document.getElementById("success").innerHTML = response;
             console.log(response)
+            document.getElementById("success").innerHTML = "Login Successful!";
         })
         .catch(function (error) {
-            document.getElementById("success").innerHTML = error;
             console.log(error)
+            document.getElementById("success").innerHTML = JSON.parse(JSON.stringify(error.message));
         });
 }

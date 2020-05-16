@@ -8,7 +8,8 @@ export default function Landing() {
             <div id="splash">
                 <div id="login">
                     <a href="/login" id="link">
-                        <h4>Login</h4></a>
+                        <h4>Login</h4>
+                    </a>
                 </div>
 
                 <div id="hero">
@@ -27,18 +28,19 @@ export default function Landing() {
                 </div>
                 <div>
                     <p>
-                        Rapptr Labs is a Jerser City-based app development firm that
-                        works with Fortune 500 brands, leading retailers, funded
-                        startups and more to craft digital products and strategies
-                        that solve business problems and drive measurable results.
-                </p>
+                        Rapptr Labs is a Jerser City-based app development firm
+                        that works with Fortune 500 brands, leading retailers,
+                        funded startups and more to craft digital products and
+                        strategies that solve business problems and drive
+                        measurable results.
+                    </p>
                     <p>
-                        We're part of your team. That means working together to meet
-                        the business challanges you face. From iOS and Android to
-                        emerging technologies like VR, AR and wearables, we do
-                        whatever it takes to help you thrive in today's - and
-                        tomorrow's - digital ecosystem.
-                </p>
+                        We're part of your team. That means working together to
+                        meet the business challanges you face. From iOS and
+                        Android to emerging technologies like VR, AR and
+                        wearables, we do whatever it takes to help you thrive in
+                        today's - and tomorrow's - digital ecosystem.
+                    </p>
                 </div>
             </div>
 
@@ -54,7 +56,6 @@ export default function Landing() {
                             />
                         </a>
                         <h5>Movo</h5>
-
                     </div>
                     <div id="app">
                         <a href="https://apps.apple.com/us/app/ww-body-analysis-scale-tracker/id1157071126">
@@ -62,7 +63,8 @@ export default function Landing() {
                                 src={require("../assets/img/logo_conair@2x.png")}
                                 alt="Conair WeightWatchers"
                                 width="220px"
-                            /></a>
+                            />
+                        </a>
                         <h5>Conair WeightWatchers</h5>
                     </div>
                     <div id="app">
@@ -91,14 +93,29 @@ export default function Landing() {
             <div id="newsletter">
                 <h2>SUBSCRIBE TO NEWSLETTER</h2>
                 <div id="news-box">
-                    <input type="email" placeholder="Your email" id="email-newsletter" />
-                    <button onClick={() => { handleEmailSubmit() }}>SUBSCRIBE</button>
+                    <input
+                        type="email"
+                        placeholder="Your email"
+                        id="email-newsletter"
+                    />
+                    <button
+                        onClick={() => {
+                            handleEmailSubmit();
+                        }}
+                    >
+                        SUBSCRIBE
+                    </button>
                 </div>
                 <div id="success"></div>
             </div>
 
             <div id="footer">
-                <h5>Site by <a href="https://abidur.dev" id="my-site">abidur.dev</a> </h5>
+                <h5>
+                    Site by{" "}
+                    <a href="https://abidur.dev" id="my-site">
+                        abidur.dev
+                    </a>{" "}
+                </h5>
             </div>
         </div>
     );
@@ -106,13 +123,20 @@ export default function Landing() {
 
 function handleEmailSubmit() {
     const useremail = document.getElementById("email-newsletter").value;
-    Axios.post("http://dev.rapptrlabs.com/Tests/scripts/add-email.php", {
-        email: useremail
+    const bodyFormData = new FormData();
+    bodyFormData.set("email", useremail);
+    Axios({
+        method: "POST",
+        url: "http://dev.rapptrlabs.com/Tests/scripts/add-email.php",
+        data: bodyFormData,
+        headers: { "Content-Type": "multipart/form-data" },
     })
         .then(function (response) {
-            document.getElementById("success").innerHTML = response;
+            console.log(response)
+            document.getElementById("success").innerHTML = JSON.parse(JSON.stringify(response.data.message));
         })
         .catch(function (error) {
-            document.getElementById("success").innerHTML = error ;
+            console.log(error)
+            document.getElementById("success").innerHTML = JSON.parse(JSON.stringify(error.message));
         });
 }
