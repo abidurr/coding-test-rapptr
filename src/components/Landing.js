@@ -20,7 +20,10 @@ export default function Landing() {
             </div>
 
             <div id="who-we-are">
+            <div id="heading">
                 <h2>WHO WE ARE</h2>
+            </div>
+                <div>
                 <p>
                     Rapptr Labs is a Jerser City-based app development firm that
                     works with Fortune 500 brands, leading retailers, funded
@@ -34,47 +37,65 @@ export default function Landing() {
                     whatever it takes to help you thrive in today's - and
                     tomorrow's - digital ecosystem.
                 </p>
+                </div>
             </div>
 
             <div id="our-apps">
                 <h2>OUR APPS</h2>
+                <div id="apps">
                 <div id="app">
+                <a href="https://movo.me/">
                 <img
                     src={require("../assets/img/logo_movo@2x.png")}
                     alt="Movo"
+                    width="220px"
                 />
+                </a>
                 <h5>Movo</h5>
+                
             </div>
             <div id="app">
+            <a href="https://apps.apple.com/us/app/ww-body-analysis-scale-tracker/id1157071126">
                 <img
                     src={require("../assets/img/logo_conair@2x.png")}
                     alt="Conair WeightWatchers"
-                />
+                    width="220px"
+                /></a>
                 <h5>Conair WeightWatchers</h5>
             </div>
             <div id="app">
+                <a href="https://apps.apple.com/us/app/the-tapping-solution/id1419815487?mt=8">
                 <img
                     src={require("../assets/img/logo_tappingSolution@2x.png")}
                     alt="Tapping Solution"
+                    width="220px"
                 />
+                </a>
                 <h5>Tapping Solution</h5>
             </div>
             <div id="app">
+            <a href="https://gotenna.com/">
                 <img
                     src={require("../assets/img/logo_goTenna@2x.png")}
                     alt="goTenna"
+                    width="220px"
                 />
+                </a>
                 <h5>goTenna</h5>
+            </div>
             </div>
         </div>
 
             <div id="newsletter">
                 <h2>SUBSCRIBE TO NEWSLETTER</h2>
-                
+                <div id="news-box">
+                <input type="email" placeholder="Your email"/>
+                <button>SUBSCRIBE</button>
+                </div>
             </div>
 
             <div id="footer">
-            Site by abidur.dev
+            <h5>Site by abidur.dev</h5>
             </div>
         </div>
     );

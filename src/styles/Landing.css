@@ -20,18 +20,99 @@
     text-align: end;
     padding-top: 32px;
     padding-right: 80px;
-    margin: 0;
+    position: relative;
 }
 
 #hero {
     display: flex;
     text-align: center;
-    height: line-height;
+    position: absolute;
+    margin: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
 
+}
+
+#who-we-are {
+    margin: 100px;
+    display: grid;
+    grid-gap: 160px;
+    grid-template-columns:  auto 50%;
+}
+
+#heading {
+    justify-self: end;
+  }
+
+#who-we-are h2 {
+    color: var(--button-blue-color);
+}
+
+#our-apps {
+    background-color: var(--dark-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#our-apps h2 {
+    margin: 0;
+}
+
+#apps {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#app {
+    padding-top: 64px;
+    padding-right: 40.5px;
+    padding-left: 40.5px;
+}
+
+#app {
+    text-decoration: none;
+}
+
+#newsletter {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-top: 88px;
+    margin-bottom: 90px;
+}
+
+#newsletter h2 {
+    margin: 0;
+    color: var(--button-blue-color);
+    text-align: center;
+}
+
+#news-box {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+#news-box input {
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    max-height: 49px;
+    min-width: 276px;
+}
+
+#news-box button {
+    background-color: var(--dark-background-color);
+    min-width: 165px;
+    cursor: pointer;
 }
 
 #footer {
