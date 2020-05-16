@@ -1,8 +1,8 @@
 :root {
-    --dark-background-color: #2F2E2E;
-    --button-blue-color: #2FCBFC;
-    --footer-gray-color: #E8E8E8;
-  }
+    --dark-background-color: #2f2e2e;
+    --button-blue-color: #2fcbfc;
+    --footer-gray-color: #e8e8e8;
+}
 
 #splash {
     margin: 0;
@@ -15,6 +15,7 @@
 
 #splash #login {
     position: relative;
+    z-index: 999;
     display: block;
     float: right;
     text-align: end;
@@ -27,25 +28,27 @@
     display: flex;
     text-align: center;
     position: absolute;
-    margin: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
     width: 100%;
+}
 
+#hero h2 {
+    margin-top: 32px;
 }
 
 #who-we-are {
     margin: 100px;
     display: grid;
     grid-gap: 160px;
-    grid-template-columns:  auto 50%;
+    grid-template-columns: auto 50%;
 }
 
 #heading {
     justify-self: end;
-  }
+}
 
 #who-we-are h2 {
     color: var(--button-blue-color);
@@ -123,4 +126,28 @@
     text-align: center;
     padding-top: 29px;
     padding-bottom: 29px;
+}
+
+@media only screen and (max-width: 1250px) {
+    #who-we-are {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #heading {
+        margin-top: 50px;
+        bottom: 0;
+        justify-self: normal;
+    }
+
+    #apps {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #news-box input {
+        min-width: 176px;
+    }
 }
