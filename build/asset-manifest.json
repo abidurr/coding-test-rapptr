@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f9f887bf.chunk.css",
+    "main.js": "/static/js/main.1baa5ab3.chunk.js",
+    "main.js.map": "/static/js/main.1baa5ab3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cff2a099.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cff2a099.js.map",
+    "static/js/2.e253db27.chunk.js": "/static/js/2.e253db27.chunk.js",
+    "static/js/2.e253db27.chunk.js.map": "/static/js/2.e253db27.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9d09076d5e9c1bfcb353cc0884f370d9.js": "/precache-manifest.9d09076d5e9c1bfcb353cc0884f370d9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f9f887bf.chunk.css.map": "/static/css/main.f9f887bf.chunk.css.map",
+    "static/js/2.e253db27.chunk.js.LICENSE.txt": "/static/js/2.e253db27.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/AvenirNext-Medium-06.597381f7.ttf",
+    "static/media/Landing.css": "/static/media/gpc_hero_image@2x.78f6cb41.png",
+    "static/media/Users.css": "/static/media/gpc_loginBg@2x.6f23ac2d.png",
+    "static/media/logo_conair@2x.png": "/static/media/logo_conair@2x.6c7604ba.png",
+    "static/media/logo_goTenna@2x.png": "/static/media/logo_goTenna@2x.81f52725.png",
+    "static/media/logo_movo@2x.png": "/static/media/logo_movo@2x.fea3265a.png",
+    "static/media/logo_tappingSolution@2x.png": "/static/media/logo_tappingSolution@2x.3213f893.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cff2a099.js",
+    "static/js/2.e253db27.chunk.js",
+    "static/css/main.f9f887bf.chunk.css",
+    "static/js/main.1baa5ab3.chunk.js"
+  ]
+}
