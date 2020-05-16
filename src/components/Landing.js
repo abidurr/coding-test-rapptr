@@ -128,7 +128,7 @@ function handleEmailSubmit() {
     bodyFormData.set("email", useremail);
     Axios({
         method: "POST",
-        url: "http://dev.rapptrlabs.com/Tests/scripts/add-email.php",
+        url: "https://dev.rapptrlabs.com/Tests/scripts/add-email.php",
         data: bodyFormData,
         headers: { "Content-Type": "multipart/form-data" },
     })

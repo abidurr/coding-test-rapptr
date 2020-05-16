@@ -47,7 +47,7 @@ function handleSubmit() {
 
     Axios({
         method: "POST",
-        url: "http://dev.rapptrlabs.com/Tests/scripts/user-signup.php",
+        url: "https://dev.rapptrlabs.com/Tests/scripts/user-signup.php",
         data: bodyFormData,
         headers: { "Content-Type": "multipart/form-data" },
     })
