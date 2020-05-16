@@ -32,3 +32,6 @@ Made who we are using CSS grid.
 Hour 5
 Made the login and sign up pages and fixed up their styling.
 Spent most of the time trying to perfect things.
+
+Hour 6
+Getting Axios set up for all the post methods
