@@ -39,6 +39,11 @@
     margin-top: 32px;
 }
 
+#link {
+    text-decoration: none;
+    color: white;
+}
+
 #who-we-are {
     margin: 100px;
     display: grid;
@@ -126,6 +131,11 @@
     text-align: center;
     padding-top: 29px;
     padding-bottom: 29px;
+}
+
+#my-site {
+    text-decoration: none;
+    color: black;
 }
 
 @media only screen and (max-width: 1250px) {

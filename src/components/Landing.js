@@ -1,5 +1,4 @@
 import "../styles/Landing.css";
-
 import React from "react";
 
 export default function Landing() {
@@ -7,7 +6,8 @@ export default function Landing() {
         <div>
             <div id="splash">
                 <div id="login">
-                    <h4>Login</h4>
+                <a href="/login" id="link">
+                <h4>Login</h4></a>
                 </div>
 
                 <div id="hero">
@@ -96,7 +96,7 @@ export default function Landing() {
             </div>
 
             <div id="footer">
-            <h5>Site by abidur.dev</h5>
+            <h5>Site by <a href="https://abidur.dev" id="my-site">abidur.dev</a> </h5>
             </div>
         </div>
     );
