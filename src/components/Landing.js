@@ -1,15 +1,16 @@
 import "../styles/Landing.css";
 import React from "react";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
     return (
         <div>
             <div id="splash">
                 <div id="login">
-                    <a href="/login" id="link">
+                    <Link to="/login" id="link">
                         <h4>Login</h4>
-                    </a>
+                    </Link>
                 </div>
 
                 <div id="hero">

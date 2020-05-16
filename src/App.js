@@ -13,8 +13,8 @@ export default function App() {
       <div>
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route exact path="/login" component={LogIn} />
-        <Route exact path="/signup" component={SignUp} />
+        <Route path="/login" component={LogIn} />
+        <Route path="/signup" component={SignUp} />
         <Route component={NotFound} />
       </Switch>  
       </div>

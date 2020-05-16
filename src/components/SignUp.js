@@ -1,23 +1,24 @@
 import React from "react";
-import Axios from "axios"
+import Axios from "axios";
+import { Link } from "react-router-dom";
 import "../styles/Users.css";
 
 export default function LogIn() {
     return (
         <div id="user-splash">
-            <a href="/" id="logo">
+            <Link to="/" id="logo">
                 <img
                     src={require("../assets/img/gpc_logo@2x.png")}
                     alt="Rapptr Hero"
                     width="200px"
                 />
-            </a>
+            </Link>
 
             <div id="users">
                 <div id="nav">
                     <h3>
-                        <a href="/signup" id="active">Sign Up</a>
-                        <a href="/login" id="inactive">Login</a>
+                        <Link to="/signup" id="active">Sign Up</Link>
+                        <Link to="/login" id="inactive">Login</Link>
                     </h3>
                 </div>
 
