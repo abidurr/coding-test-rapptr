@@ -43,6 +43,7 @@ Hour 6 -------------------------------------------------------------------
 Getting Axios set up for all the post methods.
 Changed anchor tags to Link.
 Changed HTTP to HTTPS for deployment fix.
+Making final checks and tests.
 
 --------------------------------------------------------------------------
 
